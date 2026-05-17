@@ -44,7 +44,7 @@ export const projects: Project[] = [
     title: "MemoryCard",
     category: "Android · Java · Android Studio",
     image:
-      "https://images.unsplash.com/photo-1611996575749-79a461a5030c?w=1200&q=80",
+      "https://images.unsplash.com/photo-1511512578047-dfb367046033?w=1200&q=80",
     href: "https://github.com/muhammedsali/MemoryCard",
   },
   {
@@ -52,7 +52,7 @@ export const projects: Project[] = [
     title: "Kişisel Not Defteri",
     category: "Java · JavaFX",
     image:
-      "https://images.unsplash.com/photo-1517694712202-14dd9538a880?w=1200&q=80",
+      "https://images.unsplash.com/photo-1456324505964-12c8d2a7bc94?w=1200&q=80",
     href: "https://github.com/muhammedsali/NotDefteri",
   },
 ];

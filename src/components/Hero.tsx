@@ -14,6 +14,7 @@ export function Hero() {
   });
 
   const bgScale = useTransform(scrollYProgress, [0, 0.5], [1, 1.27]);
+  const headingScale = useTransform(scrollYProgress, [0, 0.3], [1, 0.89]);
   const labelOpacity = useTransform(scrollYProgress, [0, 0.25], [1, 0]);
 
   const [firstName, lastName] = profile.name.split(" ");
@@ -45,7 +46,7 @@ export function Hero() {
       </motion.div>
 
       <div className="relative z-10 flex flex-col items-center px-6 text-center">
-        <ScrollZoomHeader>
+        <ScrollZoomHeader scale={headingScale}>
           <div className="relative inline-block">
             <h1 className="text-[12vw] font-black uppercase leading-none tracking-[-0.03em] text-[#e5e5e5]">
               {firstName}

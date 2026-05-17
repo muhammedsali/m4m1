@@ -43,16 +43,14 @@ export const projects: Project[] = [
     id: "05",
     title: "MemoryCard",
     category: "Android · Java · Android Studio",
-    image:
-      "https://images.unsplash.com/photo-1511512578047-dfb367046033?w=1200&q=80",
+    image: "https://picsum.photos/seed/memorycard/1200/750",
     href: "https://github.com/muhammedsali/MemoryCard",
   },
   {
     id: "06",
     title: "Kişisel Not Defteri",
     category: "Java · JavaFX",
-    image:
-      "https://images.unsplash.com/photo-1456324505964-12c8d2a7bc94?w=1200&q=80",
+    image: "https://picsum.photos/seed/notdefteri/1200/750",
     href: "https://github.com/muhammedsali/NotDefteri",
   },
 ];

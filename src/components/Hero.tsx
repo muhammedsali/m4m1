@@ -3,6 +3,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
+import { profile } from "@/lib/profile";
 import { ScrollZoomHeader } from "./ScrollZoomHeader";
 
 export function Hero() {
@@ -15,6 +16,8 @@ export function Hero() {
   const bgScale = useTransform(scrollYProgress, [0, 0.5], [1, 1.27]);
   const labelOpacity = useTransform(scrollYProgress, [0, 0.25], [1, 0]);
 
+  const [firstName, lastName] = profile.name.split(" ");
+
   return (
     <section
       ref={containerRef}
@@ -25,7 +28,7 @@ export function Hero() {
         style={{ scale: bgScale }}
       >
         <Image
-          src="https://images.unsplash.com/photo-1493863641943-9b68992a401d?w=1920&q=80"
+          src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1920&q=80"
           alt=""
           fill
           priority
@@ -44,21 +47,27 @@ export function Hero() {
       <div className="relative z-10 flex flex-col items-center px-6 text-center">
         <ScrollZoomHeader>
           <div className="relative inline-block">
-            <h1 className="text-[12vw] font-black leading-none tracking-[-0.03em] text-[#e5e5e5]">
-              CINEMATIC
+            <h1 className="text-[12vw] font-black uppercase leading-none tracking-[-0.03em] text-[#e5e5e5]">
+              {firstName}
             </h1>
             <motion.span
               style={{ opacity: labelOpacity }}
-              className="absolute left-[calc(100%+1rem)] top-1/2 hidden -translate-y-1/2 whitespace-nowrap text-[32px] font-thin italic text-[#e5e5e5] lg:block"
+              className="absolute left-[calc(100%+1rem)] top-1/2 hidden -translate-y-1/2 whitespace-nowrap text-[32px] font-thin italic text-[#e5e5e5] xl:block"
             >
-              Noir
+              {lastName}
             </motion.span>
+            <p className="mt-2 text-[32px] font-thin italic text-[#e5e5e5] xl:hidden">
+              {lastName}
+            </p>
           </div>
         </ScrollZoomHeader>
 
-        <p className="mt-16 max-w-2xl text-xl font-light leading-relaxed text-white/70">
-          Derin siyahlar, keskin kontrastlar ve kaydırma ile bağlı hareket —
-          galeri benzeri bir dijital deneyim.
+        <p className="mt-4 font-[family-name:var(--font-mono-label-family)] text-[14px] uppercase tracking-wider text-white/50">
+          {profile.role}
+        </p>
+
+        <p className="mt-12 max-w-2xl text-xl font-light leading-relaxed text-white/70">
+          {profile.tagline}
         </p>
       </div>
     </section>

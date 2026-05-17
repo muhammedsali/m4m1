@@ -19,8 +19,9 @@ const monoLabel = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Studio — Cinematic Noir",
-  description: "Immersive portfolio experience",
+  title: "Muhammed Sali — Mobil Yazılım Geliştirici",
+  description:
+    "Flutter ve Android ekosisteminde üretim kalitesinde mobil uygulamalar geliştiren yazılım mühendisliği öğrencisi.",
 };
 
 export default function RootLayout({

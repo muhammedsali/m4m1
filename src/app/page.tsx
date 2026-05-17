@@ -1,8 +1,9 @@
+import { About } from "@/components/About";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
-import { Manifesto } from "@/components/Manifesto";
 import { Navbar } from "@/components/Navbar";
 import { ProjectGrid } from "@/components/ProjectGrid";
+import { Skills } from "@/components/Skills";
 
 export default function Home() {
   return (
@@ -10,7 +11,8 @@ export default function Home() {
       <Navbar />
       <Hero />
       <ProjectGrid />
-      <Manifesto />
+      <About />
+      <Skills />
       <Footer />
     </main>
   );

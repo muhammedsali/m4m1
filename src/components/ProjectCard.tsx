@@ -2,7 +2,6 @@
 
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import type { Project } from "@/lib/projects";
 
 type ProjectCardProps = {
@@ -11,7 +10,12 @@ type ProjectCardProps = {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <Link href={project.href} className="group relative block overflow-hidden">
+    <a
+      href={project.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group relative block overflow-hidden"
+    >
       <div className="relative aspect-[4/5] overflow-hidden bg-[#18181b] md:aspect-[16/10]">
         <Image
           src={project.image}
@@ -24,7 +28,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
         <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10">
-          <p className="mb-2 font-[family-name:var(--font-mono-label)] text-[14px] uppercase tracking-wider text-white/60">
+          <p className="mb-2 font-[family-name:var(--font-mono-label-family)] text-[14px] uppercase tracking-wider text-white/60">
             {project.category}
           </p>
           <div className="flex items-end justify-between gap-4">
@@ -37,6 +41,6 @@ export function ProjectCard({ project }: ProjectCardProps) {
           </div>
         </div>
       </div>
-    </Link>
+    </a>
   );
 }

@@ -2,11 +2,13 @@
 
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { profile } from "@/lib/profile";
 
 const links = [
-  { label: "Work", href: "#work" },
-  { label: "Manifesto", href: "#manifesto" },
-  { label: "Contact", href: "#contact" },
+  { label: "Projeler", href: "#work" },
+  { label: "Hakkımda", href: "#about" },
+  { label: "Beceriler", href: "#skills" },
+  { label: "İletişim", href: "#contact" },
 ];
 
 export function Navbar() {
@@ -19,10 +21,10 @@ export function Navbar() {
           href="#"
           className="text-[18px] font-medium tracking-tight text-white"
         >
-          Studio
+          {profile.name.split(" ")[0]}
         </a>
 
-        <ul className="hidden items-center gap-12 md:flex">
+        <ul className="hidden items-center gap-12 lg:flex">
           {links.map((link) => (
             <li key={link.href}>
               <a
@@ -37,7 +39,7 @@ export function Navbar() {
 
         <button
           type="button"
-          className="text-white md:hidden"
+          className="text-white lg:hidden"
           onClick={() => setOpen(!open)}
           aria-label={open ? "Menüyü kapat" : "Menüyü aç"}
         >
@@ -46,7 +48,7 @@ export function Navbar() {
       </nav>
 
       {open && (
-        <ul className="mt-8 flex flex-col gap-6 border-t border-white/20 pt-8 md:hidden">
+        <ul className="mt-8 flex flex-col gap-6 border-t border-white/20 pt-8 lg:hidden">
           {links.map((link) => (
             <li key={link.href}>
               <a

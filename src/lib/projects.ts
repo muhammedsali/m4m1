@@ -9,34 +9,50 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: "01",
-    title: "Nocturne",
-    category: "Brand Identity",
+    title: "NöroDakika",
+    category: "Flutter · Dart · Firebase · Riverpod",
     image:
-      "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1200&q=80",
-    href: "#",
+      "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1200&q=80",
+    href: "https://github.com/muhammedsali/Norodakika",
   },
   {
     id: "02",
-    title: "Obsidian",
-    category: "Digital Experience",
+    title: "Mobile Agent Control V2",
+    category: "Android · Firebase · Java",
     image:
-      "https://images.unsplash.com/photo-1558591710-74e4930fe6e3?w=1200&q=80",
-    href: "#",
+      "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1200&q=80",
+    href: "https://github.com/muhammedsali/MobileAgentControl-V2",
   },
   {
     id: "03",
-    title: "Velvet",
-    category: "Editorial",
+    title: "Restoran Sipariş Takip",
+    category: "C# · Windows Forms · MsSQL",
     image:
-      "https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=1200&q=80",
-    href: "#",
+      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80",
+    href: "https://github.com/muhammedsali/RestoranTakip",
   },
   {
     id: "04",
-    title: "Meridian",
-    category: "Art Direction",
+    title: "Personel Takip",
+    category: "C# · Windows Forms · Microsoft Access",
     image:
-      "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=1200&q=80",
-    href: "#",
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80",
+    href: "https://github.com/muhammedsali/automation",
+  },
+  {
+    id: "05",
+    title: "MemoryCard",
+    category: "Android · Java · Android Studio",
+    image:
+      "https://images.unsplash.com/photo-1611996575749-79a461a5030c?w=1200&q=80",
+    href: "https://github.com/muhammedsali/MemoryCard",
+  },
+  {
+    id: "06",
+    title: "Kişisel Not Defteri",
+    category: "Java · JavaFX",
+    image:
+      "https://images.unsplash.com/photo-1517694712202-14dd9538a880?w=1200&q=80",
+    href: "https://github.com/muhammedsali/NotDefteri",
   },
 ];
